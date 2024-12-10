@@ -22,6 +22,10 @@ body {
     gap: 24px;
 }
 
+.gap32 {
+    gap: 32px;
+}
+
 .flex {
     display: flex;
 }
@@ -30,9 +34,29 @@ body {
     justify-content: space-between;
 }
 
+.lh150 {
+    line-height: 150%;
+}
+
+.f18 {
+    font-size: 18px;
+}
+
+.f24 {
+    font-size: 24px;
+}
+
 .flex-col {
     display: flex;
     flex-direction: column;
+}
+
+.mb32 {
+    margin-bottom: 32px;
+}
+
+.c999 {
+    color: #999;
 }
 
 .nav {
@@ -40,6 +64,10 @@ body {
     padding: 16px 64px;
     box-sizing: border-box;
     align-items: center;
+}
+
+.nav h3 {
+    font-size: 24px;
 }
 
 .nav-list {
@@ -91,12 +119,11 @@ body {
 .content-img {
     width: 100%;
     height: 60%;
+    background: url(../images/image.png) no-repeat;
+    background-size: 70px;
+    background-position: center;
     background-color: #f4faff;
-    /* background: url(../images/image.png) no-repeat; */
-}
-
-.c999 {
-    color: #999;
+   
 }
 
 #head1 {
@@ -111,11 +138,6 @@ body {
     -webkit-text-fill-color: transparent; 
     -webkit-background-clip: text;
 }
-
-.lh150 {
-    line-height: 150%;
-}
-
 
 .content-card:first-child {
     margin-left: 0;
@@ -227,8 +249,6 @@ body {
     font-size: 14px;
 }
 
-
-
 .contact-grid {
     display: grid;
     grid-template-columns: 346px 346px 346px;
@@ -258,6 +278,46 @@ body {
     margin-bottom: 16px;
 }
 
+.star {
+    width: 20px;
+    object-fit: contain;
+}
+
+.customer-card {
+    text-align: left;
+    padding: 32px;
+    box-sizing: border-box;
+    border: 2px solid #f4f4f4;
+    border-radius: 6px;
+    width: 348px;
+}
+
+.customer-card-data p{
+    font-size: 18px;
+}
+
+.customer-card-img {
+    height: 56px;
+    width: 56px;
+    border-radius: 28px;
+    position: relative;
+    background: url(../images/image.png) no-repeat;
+    background-color: #f4faff;
+    background-size: 30px;
+    background-position: center;
+    margin-right: 16px;
+}
+
+.customer-card-text {
+    justify-content: center;
+    font-size: 16px;
+    row-gap: 5px;
+}
+
+.customer-card-col {
+    row-gap: 32px;
+}
+
 footer {
     margin: 24px auto;
 }
@@ -271,10 +331,15 @@ footer {
     border-top: 1px solid #f4f4f4;
 }
 
-.footer-content h2{
+.footer-data h2{
     font-size: 24px;
 }
 
-.footer-content p{
+.footer-data p{
     font-size: 14px;
+}
+
+.footer-data {
+    margin-top: 32px;
+    align-items: center;
 }
