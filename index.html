@@ -10,8 +10,9 @@
 <body>
     <header>
         <div class="container flex nav">
-            <div><h3>Bialovetskyi</h3></div>
-            <div>
+            <div><h3 class="f24"><a>Bialovetskyi</a></h3></div>
+            <div class="topnav" id="myTopnav">
+                <a href="javascript:void(0);" class="icon" onclick="toggle()"><img src="./images/menu.png" alt="menu"></a>
                 <ul class="flex nav-list">
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
@@ -29,10 +30,10 @@
         <div class="container con1">
             <div class="flex-col">
                 <h1 id="head1">Artur Bialovetskyi <span>UX/UI Designer</span></h1>
-<pre class="c999 lh150 f18">
+<p class="c999 lh150 f18">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In 
 scelerisque maximus aliquam. Praesent feugiat mi sed scelerisque 
-bibendum. Phasellus feugiat dignissim metus id ultrices. </pre>
+bibendum. Phasellus feugiat dignissim metus id ultrices. </p>
             </div>
         </div>
         <div class="flex-col container con1">
@@ -40,10 +41,12 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </pre>
                 <h1>My latest projects</h1>
                 <p class="c999 f18">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-            <div>
+            <div class="content-container">
                 <div class="flex content">
                     <div class="flex-col content-card">
-                        <div class="content-img"></div>
+                        <div class="content-img">
+                            <img src="./images/finance.jpg" alt="Finance img">
+                        </div>
                         <div class="flex-col content-info">
                             <div class="flex-col gap8">
                                 <h2 class="f24">Finance App</h2>
@@ -58,11 +61,13 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </pre>
                         </div>
                     </div>
                     <div class="flex-col content-card">
-                        <div class="content-img"></div>
+                        <div class="content-img">
+                            <img src="./images/nft.jpg" alt="nft">
+                        </div>
                         <div class="flex-col content-info">
                             <div class="flex-col gap8">
                                 <h2 class="f24">NFT Project</h2>
-                                <p class="c999 lh150 f18">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                                <p class="c999 lh150">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
                             </div>
                             <ul class="flex content-card-list">
                                 <li>Web Development</li>
@@ -73,7 +78,9 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </pre>
                         </div>
                     </div>
                     <div class="flex-col content-card">
-                        <div class="content-img"></div>
+                        <div class="content-img">
+                            <img src="./images/restaurant.jpg" alt="restaurant img">
+                        </div>
                         <div class="flex-col content-info">
                             <div class="flex-col gap8">
                                 <h2 class="f24">Restaurant Business</h2>
@@ -98,7 +105,7 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </pre>
                     <div class="flex-col gap8">
                         <div class="flex jcsb">
                             <h2 class="f24">Landing Page</h2>
-                            <h2><span>From </span>100$</h2>
+                            <h2 class="f24"><span>From </span>100$</h2>
                         </div>
                         <p class="c999 lh150">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
                     </div>
@@ -108,7 +115,7 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </pre>
                     <div class="flex-col gap8">
                         <div class="flex jcsb">
                             <h2 class="f24">Photo Gallery</h2>
-                            <h2><span>From </span>200$</h2>
+                            <h2 class="f24"><span>From </span>200$</h2>
                         </div>
                         <p class="c999 lh150">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
                     </div>
@@ -118,7 +125,7 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </pre>
                     <div class="flex-col gap8">
                         <div class="flex jcsb">
                             <h2 class="f24">Blog</h2>
-                            <h2><span>From </span>300$</h2>
+                            <h2 class="f24"><span>From </span>300$</h2>
                         </div>
                         <p class="c999 lh150">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
                     </div>
@@ -128,7 +135,7 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </pre>
                     <div class="flex-col gap8">
                         <div class="flex jcsb">
                             <h2 class="f24">Corporate Website</h2>
-                            <h2><span>From </span>400$</h2>
+                            <h2 class="f24"><span>From </span>400$</h2>
                         </div>
                     <p  class="c999 lh150">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
                     </div>
@@ -138,7 +145,7 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </pre>
                     <div class="flex-col gap8">
                         <div class="flex jcsb">
                             <h2 class="f24">Forum</h2>
-                            <h2><span>From </span>500$</h2>
+                            <h2 class="f24"><span>From </span>500$</h2>
                         </div>
                     <p  class="c999 lh150">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
                     </div>
@@ -148,7 +155,7 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </pre>
                     <div class="flex-col gap8">
                         <div class="flex jcsb">
                             <h2 class="f24">E-commerce</h2>
-                            <h2><span>From </span>600$</h2>
+                            <h2 class="f24"><span>From </span>600$</h2>
                         </div>
                     <p  class="c999 lh150">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
                     </div>
@@ -157,13 +164,10 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </pre>
             </div>
         </div>
         <div class="container con3">
-            <div class="career-list-grid">
+            <div class="career-list-grid flex">
+                <div class="flex-col gap32" id="career-list-col1">
                 <div class="flex-col career-list-grid-head">
                     <h1>Work Experience</h1>
-                    <p class="c999 lh150">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. </p>
-                </div>
-                <div  class=" flex-col career-list-grid-head">
-                    <h1>Education</h1>
                     <p class="c999 lh150">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. </p>
                 </div>
                 <div class="career-list-card">
@@ -185,6 +189,12 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </pre>
                         <h2>Middle+ UI/UX Designer</h2>
                         <span class="blue-fill-button">2020</span>
                     </div>
+                    <p class="c999 lh150">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. </p>
+                </div>
+            </div>
+            <div class="flex-col gap32">
+                <div  class=" flex-col career-list-grid-head">
+                    <h1>Education</h1>
                     <p class="c999 lh150">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. </p>
                 </div>
                 <div class="career-list-card">
@@ -209,6 +219,7 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </pre>
                     <p class="c999 lh150">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. </p>
                 </div>
             </div>
+        </div>
             <button class="blue-fill-button">Download CV</button>
         </div>
         <div class="container con3">
@@ -216,7 +227,7 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </pre>
                 <h1>Customer testimonials</h1>
                 <p class="c999">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-            <div class="flex gap32">
+            <div class="customer-container gap32">
                 <div class="flex-col customer-card-col"><!-- column -->
                     <div class="customer-card flex-col">
                         <div class="mb32">
@@ -228,7 +239,9 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </pre>
                         </div>
                         <div class="customer-card-data mb32"><p class="c999 lh150">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque maximus aliquam. Praesent feugiat mi sed scelerisque bibendum. Phasellus feugiat dignissim metus id ultrices. </p></div>
                         <div class="flex">
-                            <div class="customer-card-img"></div>
+                            <div class="customer-card-img">
+                                <img src="./images/profile1.jpg" alt="profile">
+                            </div>
                             <div class="flex-col customer-card-text">
                                 <h4>Name Surname</h4>
                                 <p>Position, Company name</p>
@@ -245,7 +258,9 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </pre>
                         </div>
                         <div class="customer-card-data mb32"><p class="c999 lh150">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque maximus aliquam. Praesent feugiat mi sed scelerisque bibendum. Phasellus feugiat dignissim metus id ultrices. </p></div>
                         <div class="flex">
-                            <div class="customer-card-img"></div>
+                            <div class="customer-card-img">
+                                <img class="profile-left" src="./images/profile2.jpg" alt="profile">
+                            </div>
                             <div class="flex-col customer-card-text">
                                 <h4>Name Surname</h4>
                                 <p>Position, Company name</p>
@@ -264,7 +279,9 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </pre>
                         </div>
                         <div class="customer-card-data mb32"><p class="c999 lh150">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque maximus aliquam. Praesent feugiat mi sed scelerisque bibendum. Phasellus feugiat dignissim metus id ultrices. Phasellus feugiat dignissim metus id ultrices.  Phasellus feugiat dignissim metus id. </p></div>
                         <div class="flex">
-                            <div class="customer-card-img"></div>
+                            <div class="customer-card-img">
+                                <img src="./images/profile3.jpg" alt="profile">
+                            </div>
                             <div class="flex-col customer-card-text">
                                 <h4>Name Surname</h4>
                                 <p>Position, Company name</p>
@@ -281,7 +298,9 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </pre>
                         </div>
                         <div class="customer-card-data mb32"><p class="c999 lh150">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque maximus aliquam. Praesent feugiat mi sed scelerisque bibendum. Phasellus feugiat dignissim metus id ultrices. Phasellus feugiat dignissim metus id ultrices.  Phasellus feugiat dignissim metus id. </p></div>
                         <div class="flex">
-                            <div class="customer-card-img"></div>
+                            <div class="customer-card-img">
+                                <img class="profile-left" src="./images/profile4.jpg" alt="profile">
+                            </div>
                             <div class="flex-col customer-card-text">
                                 <h4>Name Surname</h4>
                                 <p>Position, Company name</p>
@@ -300,7 +319,9 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </pre>
                         </div>
                         <div class="customer-card-data mb32"><p class="c999 lh150">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque maximus aliquam. Praesent feugiat mi sed scelerisque bibendum. Phasellus feugiat dignissim metus id ultrices. </p></div>
                         <div class="flex">
-                            <div class="customer-card-img"></div>
+                            <div class="customer-card-img">
+                                <img class="profile-left" src="./images/profile5.jpg" alt="profile">
+                            </div>
                             <div class="flex-col customer-card-text">
                                 <h4>Name Surname</h4>
                                 <p>Position, Company name</p>
@@ -317,7 +338,9 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </pre>
                         </div>
                         <div class="customer-card-data mb32"><p class="c999 lh150">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque maximus aliquam. Praesent feugiat mi sed scelerisque bibendum. Phasellus feugiat dignissim metus id ultrices. </p></div>
                         <div class="flex">
-                            <div class="customer-card-img"></div>
+                            <div class="customer-card-img">
+                                <img class="profile-left" src="./images/profile6.jpg" alt="profile">
+                            </div>
                             <div class="flex-col customer-card-text">
                                 <h4>Name Surname</h4>
                                 <p>Position, Company name</p>
@@ -340,7 +363,7 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </pre>
                             <h1>Email</h1>
                             <p class="c999 lh150">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.</p>
                         </div>
-                        <a>hello@gmail.com</a>
+                        <a href="">hello@gmail.com</a>
                      </div>
                 </div>
                 <div class="contact-card">
@@ -350,7 +373,7 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </pre>
                             <h1>Phone</h1>
                             <p class="c999 lh150">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.</p>
                         </div>
-                        <a>+1 (555) 000-0000</a>
+                        <a href="">+1 (555) 000-0000</a>
                      </div>
                 </div>
                 <div class="contact-card">
@@ -360,7 +383,7 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </pre>
                             <h1>Office</h1>
                             <p class="c999 lh150">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.</p>
                         </div>
-                        <a>76 9th Avenue New York, NY 10011 USA</a>
+                        <a href="">76 9th Avenue New York, NY 10011 USA</a>
                      </div>
                 </div>
             </div>
@@ -376,5 +399,16 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </pre>
             </div>
         </div>
     </footer>
+
+    <script>
+        function toggle() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+        }
+    </script>
 </body>
 </html>
