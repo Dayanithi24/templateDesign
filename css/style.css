@@ -126,6 +126,11 @@ body {
     cursor: pointer;
 }
 
+.blue-fill-button:hover {
+    box-shadow: 0 0 5px #00000086;
+    font-weight: bold;
+}
+
 .con1 {
     padding: 64px;
     box-sizing: border-box;
@@ -298,6 +303,7 @@ body {
 .contact-card a {
     text-decoration: underline;
     color: #000;
+    cursor: pointer;
 }
 
 .contact-card img {
@@ -402,6 +408,53 @@ footer {
     display: none;
 }
 
+#blur.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup {
+    position: fixed;
+    width: max-content;
+    top:10vh;
+    left: 15vw;
+    padding: 20px;
+    background-color: #fff;
+    visibility: hidden;
+}
+
+#popup iframe {
+    height: 60vh;
+    width: 70vw;
+    border: 0;
+}
+
+#popup button {
+    display: block;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: none;
+    float: right;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#popup img {
+    height: 100%;
+    width: 100%;
+}
+
+#popup.active {
+    visibility: visible;
+}
+
+.content-container::-webkit-scrollbar, .price-list-container::-webkit-scrollbar {
+    display: none;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
     .container {
         width: 100%;
@@ -455,7 +508,6 @@ footer {
         margin: 0;
         height: max-content;
         align-items: center;
-        padding: 8px;
     }
 
     .content-info {
@@ -476,7 +528,6 @@ footer {
     }
 
     .content-img {
-        width: 95%;
         height: 40%;
     }
 
@@ -490,14 +541,23 @@ footer {
         gap: 8px;
     }
 
-    .contact-grid, .price-list-card-grid {
+    .price-list-container {
+        overflow-x: scroll;
+    }
+    
+    .price-list-card-grid {
+        grid-template-columns: 320px 320px 320px;
+        gap: 16px;
+    }
+
+    .price-list-card {
+        padding: 16px;
+    }
+    
+    .contact-grid {
         justify-items: center;
         grid-template-columns: inherit;
         gap: 16px;
-    }
-    
-    .price-list-card {
-       width: 77%;
     }
 
     .price-list-card h2 {
@@ -603,7 +663,7 @@ footer {
     }
     
     .con2 {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     
     .con2 p {
@@ -636,9 +696,33 @@ footer {
         gap: 1rem;
     }
 
+    #popup {
+        top:20vh;
+        left: 2vw;
+        padding: 16px;
+    }
+    
+    #popup iframe {
+        height: 50vh;
+        width: 90vw;
+    }
+
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
+    
+    #popup {
+        top:20vh;
+        left: 10vw;
+        padding: 18px;
+    }
+    
+    #popup iframe {
+        height: 50vh;
+        width: 80vw;
+        border: 0;
+    }
+
     .container {
         width: 100%;
         padding: 16px;
@@ -691,7 +775,6 @@ footer {
         margin: 0;
         height: max-content;
         align-items: center;
-        padding: 8px;
     }
 
     .content-info {
@@ -712,7 +795,6 @@ footer {
     }
 
     .content-img {
-        width: 95%;
         height: 40%;
     }
 
@@ -876,6 +958,18 @@ footer {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+    
+    #popup {
+        top:15vh;
+        left: 10vw;
+        padding: 16px;
+    }
+    
+    #popup iframe {
+        height: 70vh;
+        width: 80vw;
+    }
+    
     .container {
         width: 100%;
         padding: 32px;
@@ -897,7 +991,6 @@ footer {
         margin: 0;
         height: max-content;
         align-items: center;
-        padding: 8px;
     }
 
     .content-info {
@@ -928,6 +1021,10 @@ footer {
         width: 49%;
     }
 
+    .customer-card-data p {
+        font-size: 1rem;
+    }
+
     .contact-grid {
         grid-template-columns: 49% 49%;
         gap: 16px;
@@ -935,6 +1032,10 @@ footer {
 
     .contact-card-head h1 {
         font-size: 1.5rem;
+    }
+
+    .con2 {
+        margin-bottom: 50px;
     }
 
     .con2 h1 {

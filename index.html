@@ -8,6 +8,7 @@
     <title>Home</title>
 </head>
 <body>
+    <div id="blur">
     <header>
         <div class="container flex nav">
             <div><h3 class="f24"><a>Bialovetskyi</a></h3></div>
@@ -100,6 +101,7 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </p>
                 <h1>Price List</h1>
                 <p class="c999 f18">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
+            <div class="price-list-container">
             <div class="price-list-card-grid">
                 <div class="flex-col price-list-card jcsb">
                     <div class="flex-col gap8">
@@ -163,6 +165,7 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </p>
                 </div>
             </div>
         </div>
+        </div>
         <div class="container con3">
             <div class="career-list-grid flex">
                 <div class="flex-col gap32" id="career-list-col1">
@@ -225,7 +228,7 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </p>
         <div class="container con3">
             <div class="flex-col con2">
                 <h1>Customer testimonials</h1>
-                <p class="c999">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="f18 c999">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="customer-container gap32">
                 <div class="flex-col customer-card-col"><!-- column -->
@@ -363,7 +366,7 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </p>
                             <h1>Email</h1>
                             <p class="c999 lh150">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.</p>
                         </div>
-                        <a href="">hello@gmail.com</a>
+                        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSBptJPsFjWwxNBXQFpnrQXwSDdbFjVbVbWbRDqjphFVNJQpcCXcvcFwfjWbmlFgcwNxPDvZ" target="_blank">hello@gmail.com</a>
                      </div>
                 </div>
                 <div class="contact-card">
@@ -373,7 +376,7 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </p>
                             <h1>Phone</h1>
                             <p class="c999 lh150">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.</p>
                         </div>
-                        <a href="">+1 (555) 000-0000</a>
+                        <a href="tel:+1(555)000-0000">+1 (555) 000-0000</a>
                      </div>
                 </div>
                 <div class="contact-card">
@@ -383,7 +386,7 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </p>
                             <h1>Office</h1>
                             <p class="c999 lh150">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.</p>
                         </div>
-                        <a href="">76 9th Avenue New York, NY 10011 USA</a>
+                        <a onclick="toggle1()">76 9th Avenue New York, NY 10011 USA</a>
                      </div>
                 </div>
             </div>
@@ -399,15 +402,27 @@ bibendum. Phasellus feugiat dignissim metus id ultrices. </p>
             </div>
         </div>
     </footer>
-
+</div>
+<div id="popup">
+    <button onclick="toggle1()"><img src="./images/close.png" alt="close"></button>
+    <div style="clear: both;"></div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7359.9015676792105!2d77.06535131877425!3d11.048857125936056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8575ef2d262af%3A0x39009ca1eb415f65!2sTrusTrace!5e0!3m2!1sen!2sin!4v1734067877304!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ </div>
     <script>
         function toggle() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
         }
+
+        function toggle1() {
+            var blur=document.getElementById("blur");
+            blur.classList.toggle("active")
+            var popup=document.getElementById("popup");
+            popup.classList.toggle("active")
         }
     </script>
 </body>
