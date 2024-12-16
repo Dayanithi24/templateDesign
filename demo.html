@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .content-card {
+        width: 24rem;
+        height: 24rem;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        color: rgb(240, 240, 240);
+        box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+      }
+
+        .content-img img {
+          position: absolute;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          opacity: 0.9;
+          transition: opacity 0.2s ease-out;
+        }
+
+        .content-info {
+          position: relative;
+          z-index: 1;
+        }
+
+          h2 {
+            position: absolute;
+            inset: 300px auto auto 20px;
+            margin: 0;
+            transition: inset 0.3s 0.3s ease-out;
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: normal;
+            text-transform: uppercase;
+          }
+
+          p,
+          ul,
+          button {
+            position: absolute;
+            opacity: 0;
+            max-width: 80%;
+            transition: opacity 0.3s ease-out;
+          }
+
+          p {
+            inset: 170px auto auto 20px;
+          }
+
+          ul {
+            inset: 230px auto auto 20px;
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            padding: 0;
+            color: inherit;
+          }
+
+          li {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px;
+            border-radius: 6px;
+          }
+
+          button {
+            inset: 300px auto auto 20px;
+            background-color: #0000003e;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            text-transform: uppercase;
+          }
+
+        .content-card:hover h2 {
+          inset: 150px 0 100px 20px;
+          transition: inset 0.3s ease-out;
+        }
+
+        .content-info li:hover {
+          background-color: #ffffffc3;
+          color: black;
+          transition: color 0.3s 0.1s ease-in;
+        }
+
+        .content-info button:hover {
+          background-color: #000;
+          color: gold;
+          transition: color 0.5s 0.1s ease-in;
+        }
+
+        .content-card:hover p,
+        .content-card:hover ul,
+        .content-card:hover button {
+          opacity: 1;
+          transition: opacity 0.5s 0.1s ease-in;
+        }
+
+        .content-card:hover .content-img img {
+          transition: opacity 0.3s ease-in;
+          opacity: 1;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="flex-col content-card">
+      <div class="content-img">
+        <img src="./images/finance.jpg" alt="Finance img" />
+      </div>
+      <div class="flex-col content-info">
+        <div class="flex-col gap8">
+          <h2 class="f24">Finance App</h2>
+          <p class="c999 lh150">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </div>
+        <ul class="flex content-card-list">
+          <li>UI Design</li>
+          <li>UX Research</li>
+          <li>Brand Identity</li>
+        </ul>
+        <button class="blue-fill-button">View project</button>
+      </div>
+    </div>
+  </body>
+</html>
